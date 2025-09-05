@@ -1,9 +1,9 @@
 ---
-foto: assets/logo.jpeg
-precio: 25.99
+foto: assets/basic1.png
+precio: 14.99
 enlace: #
 ---
 
-# Camiseta Blyss
+# Camiseta Básica Blyss
 
-Esta es la descripción de una camiseta de ejemplo. Es una prenda de alta calidad, perfecta para cualquier ocasión.
+Camiseta básica 100% en difentes colores. Tu estilo, tu mundo.
