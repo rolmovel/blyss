@@ -1,0 +1,12 @@
+# Dependencias
+node_modules/
+
+# Archivos de construcción
+dist/
+
+# Archivos generados
+escaparate.json
+destacados-data.json
+
+# Archivos del sistema operativo
+.DS_Store

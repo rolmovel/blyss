@@ -1,0 +1,22 @@
+{
+  "name": "blyss-escaparate",
+  "version": "1.0.0",
+  "description": "Scripts para generar el escaparate de la tienda Blyss",
+  "main": "build-escaparate.js",
+  "scripts": {
+    "build:static": "node build-static.js",
+    "build:escaparate": "node build-escaparate.js",
+    "build:destacados": "node build-destacados.js",
+    "build": "npm run build:static && npm run build:escaparate && npm run build:destacados"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^13.0.2"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.3.1"
+  }
+}

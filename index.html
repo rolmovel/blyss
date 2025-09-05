@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blyss - Moda y Estilo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="assets/logo.jpeg" alt="Blyss Logo" class="logo-img">
+                    <span class="logo-text">Blyss</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="escaparate.html" class="nav-link">Escaparate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link cart-icon">🛒</a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Descubre Tu Estilo Único</h1>
+                <p class="hero-subtitle">Colección exclusiva de ropa moderna y elegante para toda ocasión</p>
+                <a href="escaparate.html" class="cta-button">Explorar Colección</a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <span>📸 Hero Image</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Productos Destacados</h2>
+                <div class="products-grid" id="featured-products-grid">
+                    <!-- Los productos destacados se cargarán aquí dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@blyss.com</p>
+                    <p>📱 +34 123 456 789</p>
+                    <p>📍 Madrid, España</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Envíos y Devoluciones</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blyss. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/destacados.js"></script>
+</body>
+</html>
