@@ -2,6 +2,7 @@
 foto: assets/basic1.png
 precio: 14.99
 enlace: #
+categoria: Mujer
 ---
 
 # Camiseta Básica Blyss
