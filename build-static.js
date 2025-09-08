@@ -7,6 +7,7 @@ const staticAssets = [
   'escaparate.html',
   'sobre-nosotros.html',
   'producto.html',
+  'cart.html',
   'styles.css',
   'script.js',
   'js',

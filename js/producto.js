@@ -41,7 +41,7 @@ function renderProductDetail(product) {
     // Generar HTML para las opciones (con comprobaciones de seguridad)
     const tallasHtml = Array.isArray(product.tallas) ? product.tallas.map(talla => `<button class="size-option">${talla}</button>`).join('') : '';
     const coloresHtml = Array.isArray(product.colores) ? product.colores.map(color => 
-        `<div class="color-option" style="background-color: ${color.codigo};" title="${color.nombre}"></div>`
+        `<div class="color-option" style="background-color: ${color.codigo};" title="${color.nombre}" data-nombre="${color.nombre}" data-codigo="${color.codigo}"></div>`
     ).join('') : '';
     const galeriaHtml = Array.isArray(product.galeria_fotos) ? product.galeria_fotos.map((foto, index) => 
         `<img src="${foto}" alt="Vista ${index + 1} de ${product.titulo}" class="thumbnail-img ${index === 0 ? 'active' : ''}">`
@@ -87,10 +87,10 @@ function renderProductDetail(product) {
         </div>
     `;
 
-    addEventListenersToOptions();
+    addEventListenersToOptions(product);
 }
 
-function addEventListenersToOptions() {
+function addEventListenersToOptions(product) {
     // Event listener para la galería de thumbnails
     const mainImage = document.getElementById('main-product-image');
     const thumbnails = document.querySelectorAll('.thumbnail-img');
@@ -119,4 +119,38 @@ function addEventListenersToOptions() {
             option.classList.add('selected');
         });
     });
+
+    // Event listener para el botón de añadir al carrito
+    const addToCartButton = document.querySelector('.add-to-cart-btn');
+    if (addToCartButton) {
+        addToCartButton.addEventListener('click', () => {
+            const selectedSizeEl = document.querySelector('.size-option.selected');
+            const selectedColorEl = document.querySelector('.color-option.selected');
+
+            if (!selectedSizeEl) {
+                alert('Por favor, selecciona una talla.');
+                return;
+            }
+            if (!selectedColorEl) {
+                alert('Por favor, selecciona un color.');
+                return;
+            }
+
+            const selectedSize = selectedSizeEl.textContent;
+            const selectedColor = {
+                nombre: selectedColorEl.dataset.nombre,
+                codigo: selectedColorEl.dataset.codigo
+            };
+
+            addToCart(product, selectedSize, selectedColor);
+
+            // Feedback visual para el usuario
+            addToCartButton.textContent = '¡Añadido!';
+            addToCartButton.disabled = true;
+            setTimeout(() => {
+                addToCartButton.textContent = 'Añadir al carrito';
+                addToCartButton.disabled = false;
+            }, 2000);
+        });
+    }
 }
