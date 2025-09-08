@@ -87,7 +87,55 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderCart(); // Volver a renderizar el carrito
             });
         });
+
+        // Evento para el botón de finalizar compra
+        document.querySelector('.checkout-btn').addEventListener('click', handleCheckout);
+
     }
 
     renderCart();
 });
+
+async function handleCheckout() {
+    const checkoutButton = document.querySelector('.checkout-btn');
+    checkoutButton.disabled = true;
+    checkoutButton.textContent = 'Procesando...';
+
+    const cart = getCart();
+    const today = new Date().toISOString().split('T')[0]; // Formato YYYY-MM-DD
+
+    const payload = cart.map(item => ({
+        fecha_pedido: today,
+        producto: item.id,
+        cantidad: item.quantity,
+        talla: item.size.toLowerCase(),
+        color: item.color.nombre.toLowerCase()
+    }));
+
+    try {
+        const response = await fetch('https://108.129.164.139:5679/webhook/pedido', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) {
+            // Si la respuesta no es exitosa, lanzamos un error para que lo capture el bloque catch
+            const errorData = await response.text(); // Intenta leer el cuerpo del error
+            throw new Error(`Error del servidor: ${response.status} ${response.statusText}. Detalles: ${errorData}`);
+        }
+
+        alert('¡Pedido realizado con éxito!');
+        saveCart([]); // Vaciar el carrito
+        window.location.href = 'index.html'; // Redirigir a la página de inicio
+
+    } catch (error) {
+        console.error('Error al realizar el pedido:', error);
+        alert(`No se pudo completar el pedido. Por favor, inténtalo de nuevo más tarde.\nError: ${error.message}`);
+        checkoutButton.disabled = false;
+        checkoutButton.textContent = 'Finalizar Compra';
+    }
+}
+
