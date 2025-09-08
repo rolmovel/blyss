@@ -29,18 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     articlesToShow.forEach(article => {
-      const productCard = document.createElement('div');
+      const productCard = document.createElement('a');
+      productCard.href = `producto.html?id=${article.id}`;
       productCard.classList.add('product-card');
       productCard.setAttribute('data-category', article.categoria.toLowerCase());
 
       productCard.innerHTML = `
         <div class="product-image">
-          <img src="${article.foto}" alt="${article.id}" style="width: 100%; height: 100%; object-fit: cover;">
+          <img src="${article.foto}" alt="${article.titulo}" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="product-info">
-          ${article.descripcion}
+          <h3 class="product-name">${article.titulo}</h3>
           <p class="product-price">€${article.precio.toFixed(2)}</p>
-          <a href="${article.enlace}" class="add-to-cart">Comprar</a>
         </div>
       `;
       productsGallery.appendChild(productCard);

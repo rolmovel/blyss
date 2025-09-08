@@ -35,15 +35,36 @@ function processArticles(files) {
         titulo: title,
         foto: data.foto,
         precio: data.precio,
-        enlace: data.enlace,
         categoria: data.categoria || 'General',
         descripcion: marked(descriptionWithoutTitle),
+        tallas: data.tallas || [],
+        colores: data.colores || [],
+        galeria_fotos: getGalleryImages(data.galeria, data.foto),
       };
     } catch (error) {
       console.error(`Error al procesar el archivo: ${file}`, error);
       return null;
     }
   }).filter(Boolean); // Filtra los artículos que no se pudieron procesar
+}
+
+// Nueva función para obtener las imágenes de la galería
+function getGalleryImages(galleryPath, defaultImage) {
+  if (!galleryPath) {
+    return [defaultImage]; // Devuelve la imagen principal si no hay galería
+  }
+
+  const fullGalleryPath = path.join(__dirname, galleryPath);
+  try {
+    if (fs.existsSync(fullGalleryPath)) {
+      const imageFiles = fs.readdirSync(fullGalleryPath);
+      return imageFiles.map(file => path.join(galleryPath, file).replace(/\\/g, '/'));
+    }
+    return [defaultImage];
+  } catch (error) {
+    console.error(`Error al leer la galería de imágenes en: ${fullGalleryPath}`, error);
+    return [defaultImage];
+  }
 }
 
 // Función principal para construir el escaparate

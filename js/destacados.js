@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
       featuredGrid.innerHTML = '';
 
       destacados.forEach(article => {
-        const productCard = document.createElement('div');
+        const productCard = document.createElement('a');
+        productCard.href = `producto.html?id=${article.id}`;
         productCard.classList.add('product-card');
 
         productCard.innerHTML = `
@@ -33,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="product-info">
             <h3 class="product-name">${article.titulo}</h3>
             <p class="product-price">€${article.precio.toFixed(2)}</p>
-            <a href="escaparate.html" class="product-link">Ver más</a>
           </div>
         `;
         featuredGrid.appendChild(productCard);
