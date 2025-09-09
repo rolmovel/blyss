@@ -1,23 +1,9 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "api/create-checkout-session.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "dist/**",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/api/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/dist/$1"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/create-checkout-session.js",
+      "use": "@vercel/node"
+    }
+  ]
+}
