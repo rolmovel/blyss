@@ -127,6 +127,24 @@ document.addEventListener('DOMContentLoaded', () => {
             handleCheckout();
         });
 
+        // Cargar la dirección guardada, si existe
+        loadShippingAddress();
+    }
+
+    function loadShippingAddress() {
+        const savedAddress = localStorage.getItem('shippingAddress');
+        if (savedAddress) {
+            const address = JSON.parse(savedAddress);
+            // Comprobar si el formulario existe antes de intentar rellenarlo
+            const addressInput = document.getElementById('address');
+            if (addressInput) {
+                addressInput.value = address.address || '';
+                document.getElementById('city').value = address.city || '';
+                document.getElementById('state').value = address.state || '';
+                document.getElementById('zip').value = address.zip || '';
+                document.getElementById('country').value = address.country || '';
+            }
+        }
     }
 
     renderCart();
@@ -147,6 +165,9 @@ async function handleCheckout() {
         zip: formData.get('zip'),
         country: formData.get('country'),
     };
+
+    // Guardar la dirección en localStorage para futuras compras
+    localStorage.setItem('shippingAddress', JSON.stringify(shippingAddress));
 
     // Aquí se puede añadir la validación de la dirección contra un sistema externo
 
