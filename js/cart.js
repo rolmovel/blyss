@@ -65,6 +65,11 @@ function removeFromCart(cartItemId) {
     saveCart(cart);
 }
 
+// Limpiar todo el carrito
+function clearCart() {
+    saveCart([]);
+}
+
 // Obtener el número total de items en el carrito
 function getCartItemCount() {
     const cart = getCart();
