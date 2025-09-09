@@ -108,7 +108,7 @@ async function handleCheckout() {
 
     try {
         // 1. Llama a tu función serverless para crear la sesión de pago
-        const response = await fetch('https://gkhz4ie3vxhgxjt22owcqh3zpi0xblsu.lambda-url.eu-west-1.on.aws/', {
+                const response = await fetch('/api/create-checkout-session', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

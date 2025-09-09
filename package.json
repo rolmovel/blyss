@@ -7,7 +7,8 @@
     "build:static": "node build-static.js",
     "build:escaparate": "node build-escaparate.js",
     "build:destacados": "node build-destacados.js",
-    "build": "npm run build:static && npm run build:escaparate && npm run build:destacados"
+    "build": "npm run build:static && npm run build:escaparate && npm run build:destacados",
+    "vercel-build": "npm run build"
   },
   "keywords": [],
   "author": "",
