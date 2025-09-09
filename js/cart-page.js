@@ -99,41 +99,44 @@ document.addEventListener('DOMContentLoaded', () => {
 async function handleCheckout() {
     const checkoutButton = document.querySelector('.checkout-btn');
     checkoutButton.disabled = true;
-    checkoutButton.textContent = 'Procesando...';
+    checkoutButton.textContent = 'Redirigiendo al pago...';
 
     const cart = getCart();
-    const today = new Date().toISOString().split('T')[0]; // Formato YYYY-MM-DD
 
-    const payload = cart.map(item => ({
-        fecha_pedido: today,
-        producto: item.id,
-        cantidad: item.quantity,
-        talla: item.size.toLowerCase(),
-        color: item.color.nombre.toLowerCase()
-    }));
+    // Debes reemplazar esta clave con tu clave pública de Stripe
+    const stripe = Stripe('TU_CLAVE_PUBLICA_DE_STRIPE');
 
     try {
-        const response = await fetch('https://108.129.164.139:5679/webhook/pedido', {
+        // 1. Llama a tu función serverless para crear la sesión de pago
+        const response = await fetch('/api/create-checkout-session', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(payload),
+            body: JSON.stringify(cart),
         });
 
         if (!response.ok) {
-            // Si la respuesta no es exitosa, lanzamos un error para que lo capture el bloque catch
-            const errorData = await response.text(); // Intenta leer el cuerpo del error
-            throw new Error(`Error del servidor: ${response.status} ${response.statusText}. Detalles: ${errorData}`);
+            throw new Error('No se pudo crear la sesión de pago.');
         }
 
-        alert('¡Pedido realizado con éxito!');
-        saveCart([]); // Vaciar el carrito
-        window.location.href = 'index.html'; // Redirigir a la página de inicio
+        const session = await response.json();
+
+        // 2. Redirige al usuario a la página de pago de Stripe
+        const result = await stripe.redirectToCheckout({
+            sessionId: session.id,
+        });
+
+        if (result.error) {
+            // Si hay un error en la redirección (poco común), muéstralo
+            alert(result.error.message);
+            checkoutButton.disabled = false;
+            checkoutButton.textContent = 'Finalizar Compra';
+        }
 
     } catch (error) {
-        console.error('Error al realizar el pedido:', error);
-        alert(`No se pudo completar el pedido. Por favor, inténtalo de nuevo más tarde.\nError: ${error.message}`);
+        console.error('Error al procesar el pago:', error);
+        alert('Hubo un problema al redirigir a la pasarela de pago. Por favor, inténtalo de nuevo.');
         checkoutButton.disabled = false;
         checkoutButton.textContent = 'Finalizar Compra';
     }
