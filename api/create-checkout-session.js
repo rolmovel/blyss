@@ -1,9 +1,24 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*', 
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS'
+};
+
 exports.handler = async (event) => {
+  // Manejar la petición "preflight" de CORS
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 204, 
+      headers: corsHeaders,
+      body: ''
+    };
+  }
+
   // Solo permitir peticiones POST
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: 'Method Not Allowed' };
+    return { statusCode: 405, headers: corsHeaders, body: 'Method Not Allowed' };
   }
 
   try {
@@ -16,9 +31,9 @@ exports.handler = async (event) => {
         product_data: {
           name: item.titulo,
           description: `Talla: ${item.size}, Color: ${item.color.nombre}`,
-          images: [item.foto], // Stripe necesita una URL pública para la imagen
+          images: [item.foto], 
         },
-        unit_amount: Math.round(item.precio * 100), // El precio debe estar en céntimos
+        unit_amount: Math.round(item.precio * 100), 
       },
       quantity: item.quantity,
     }));
@@ -37,6 +52,7 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
+      headers: corsHeaders,
       body: JSON.stringify({ id: session.id }),
     };
 
@@ -44,6 +60,7 @@ exports.handler = async (event) => {
     console.error('Error al crear la sesión de Stripe:', error);
     return {
       statusCode: 500,
+      headers: corsHeaders,
       body: JSON.stringify({ error: 'Error al procesar el pago.' }),
     };
   }
