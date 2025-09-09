@@ -5,7 +5,6 @@ node_modules/
 dist/
 
 # Archivos generados
-escaparate.json
 destacados-data.json
 
 # Archivos del sistema operativo

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "articulo1",
+    "titulo": "Camiseta Básica Blyss",
+    "foto": "assets/basic1.png",
+    "precio": 14.99,
+    "categoria": "Mujer",
+    "descripcion": "<p>Camiseta básica 100% algodón en diferentes colores. Perfecta para cualquier look, cómoda y versátil. Porque a veces, menos es más. Tu estilo, tu mundo.</p>\n",
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      {
+        "nombre": "Negro",
+        "codigo": "#000000"
+      },
+      {
+        "nombre": "Blanco",
+        "codigo": "#FFFFFF"
+      },
+      {
+        "nombre": "Rojo",
+        "codigo": "#E74C3C"
+      }
+    ],
+    "galeria_fotos": [
+      "assets/products/articulo1/1.png",
+      "assets/products/articulo1/2.png",
+      "assets/products/articulo1/3.png"
+    ]
+  },
+  {
+    "id": "articulo2",
+    "titulo": "Camiseta Básica Blyss",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 14.99,
+    "categoria": "Unisex",
+    "descripcion": "<p>Camiseta básica 100% algodón en diferentes colores. Perfecta para cualquier look, cómoda y versátil. Porque a veces, menos es más. Tu estilo, tu mundo.</p>\n",
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colores": [
+      {
+        "nombre": "Negro",
+        "codigo": "#141313"
+      },
+      {
+        "nombre": "Gris militar",
+        "codigo": "#737a5f"
+      },
+      {
+        "nombre": "Granate",
+        "codigo": "#c21b3a"
+      },
+      {
+        "nombre": "Verde bosque",
+        "codigo": "#1A3B23"
+      }
+    ],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+      "assets/products/articulo2/unisex-classic-tee-black-front-2-68c04f7569cd8.png",
+      "assets/products/articulo2/unisex-classic-tee-black-front-68c04f7568bbf.png",
+      "assets/products/articulo2/unisex-classic-tee-black-front-68c04f75697da.png",
+      "assets/products/articulo2/unisex-classic-tee-black-front-and-back-68c04f756a13d.png",
+      "assets/products/articulo2/unisex-classic-tee-cardinal-back-68c04f7569406.png",
+      "assets/products/articulo2/unisex-classic-tee-cardinal-front-2-68c04f7569d94.png",
+      "assets/products/articulo2/unisex-classic-tee-cardinal-front-68c04f7568eeb.png",
+      "assets/products/articulo2/unisex-classic-tee-cardinal-front-68c04f7569896.png",
+      "assets/products/articulo2/unisex-classic-tee-cardinal-front-and-back-68c04f756a1fd.png",
+      "assets/products/articulo2/unisex-classic-tee-forest-green-back-68c04f7569536.png",
+      "assets/products/articulo2/unisex-classic-tee-forest-green-front-2-68c04f7569ebf.png",
+      "assets/products/articulo2/unisex-classic-tee-forest-green-front-68c04f7569035.png",
+      "assets/products/articulo2/unisex-classic-tee-forest-green-front-68c04f75699f2.png",
+      "assets/products/articulo2/unisex-classic-tee-forest-green-front-and-back-68c04f756a2c4.png",
+      "assets/products/articulo2/unisex-classic-tee-military-green-back-68c04f756949d.png",
+      "assets/products/articulo2/unisex-classic-tee-military-green-front-2-68c04f7569e2b.png",
+      "assets/products/articulo2/unisex-classic-tee-military-green-front-68c04f7568fa0.png",
+      "assets/products/articulo2/unisex-classic-tee-military-green-front-68c04f7569944.png",
+      "assets/products/articulo2/unisex-classic-tee-military-green-front-and-back-68c04f756a365.png"
+    ]
+  },
+  {
+    "id": "articulo3",
+    "titulo": "Chaqueta de Cuero",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 120.5,
+    "categoria": "Hombre",
+    "descripcion": "<p>Una chaqueta de cuero clásica que nunca pasa de moda.</p>\n",
+    "tallas": [],
+    "colores": [],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png"
+    ]
+  },
+  {
+    "id": "articulo4",
+    "titulo": "Blusa Elegante",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 45,
+    "categoria": "Mujer",
+    "descripcion": "<p>Blusa de seda ideal para ocasiones especiales.</p>\n",
+    "tallas": [],
+    "colores": [],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png"
+    ]
+  },
+  {
+    "id": "articulo5",
+    "titulo": "Camisa de Lino",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 65,
+    "categoria": "Hombre",
+    "descripcion": "<p>Camisa de lino transpirable, perfecta para el calor.</p>\n",
+    "tallas": [],
+    "colores": [],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png"
+    ]
+  },
+  {
+    "id": "articulo6",
+    "titulo": "Falda Plisada",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 75.99,
+    "categoria": "Mujer",
+    "descripcion": "<p>Falda plisada de media altura, versátil y moderna.</p>\n",
+    "tallas": [],
+    "colores": [],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png"
+    ]
+  },
+  {
+    "id": "articulo7",
+    "titulo": "Pantalones Chinos",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 55,
+    "categoria": "Hombre",
+    "descripcion": "<p>Pantalones chinos de corte slim, cómodos y elegantes.</p>\n",
+    "tallas": [],
+    "colores": [],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png"
+    ]
+  },
+  {
+    "id": "articulo8",
+    "titulo": "Abrigo de Lana",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 150,
+    "categoria": "Mujer",
+    "descripcion": "<p>Un abrigo cálido y sofisticado para el invierno.</p>\n",
+    "tallas": [],
+    "colores": [],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png"
+    ]
+  },
+  {
+    "id": "articulo9",
+    "titulo": "Sudadera con Capucha",
+    "foto": "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png",
+    "precio": 49.99,
+    "categoria": "Hombre",
+    "descripcion": "<p>Sudadera de algodón orgánico, suave y resistente.</p>\n",
+    "tallas": [],
+    "colores": [],
+    "galeria_fotos": [
+      "assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png"
+    ]
+  }
+]
