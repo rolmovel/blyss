@@ -108,7 +108,7 @@ async function handleCheckout() {
 
     try {
         // 1. Llama a tu función serverless para crear la sesión de pago
-        const response = await fetch('/api/create-checkout-session', {
+        const response = await fetch('https://strype-integration.lambda-url.eu-west-1.on.aws', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -141,4 +141,3 @@ async function handleCheckout() {
         checkoutButton.textContent = 'Finalizar Compra';
     }
 }
-
