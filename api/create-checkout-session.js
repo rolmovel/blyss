@@ -6,23 +6,25 @@ const corsHeaders = {
   'Access-Control-Allow-Methods': 'POST, OPTIONS'
 };
 
-exports.handler = async (event) => {
+export default async function handler(req, res) {
   // Manejar la petición "preflight" de CORS
-  if (event.httpMethod === 'OPTIONS') {
-    return {
-      statusCode: 204, 
-      headers: corsHeaders,
-      body: ''
-    };
+  if (req.method === 'OPTIONS') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    return res.status(204).end();
   }
 
+  // Añadir cabeceras CORS a la respuesta principal
+  res.setHeader('Access-Control-Allow-Origin', '*');
+
   // Solo permitir peticiones POST
-  if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, headers: corsHeaders, body: 'Method Not Allowed' };
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method Not Allowed' });
   }
 
   try {
-    const cartItems = JSON.parse(event.body);
+    const cartItems = req.body; // Vercel ya parsea el JSON automáticamente
 
     // Formatear los productos para la API de Stripe
     const line_items = cartItems.map(item => ({
@@ -31,15 +33,15 @@ exports.handler = async (event) => {
         product_data: {
           name: item.titulo,
           description: `Talla: ${item.size}, Color: ${item.color.nombre}`,
-          images: [item.foto], 
+          images: [item.foto],
         },
-        unit_amount: Math.round(item.precio * 100), 
+        unit_amount: Math.round(item.precio * 100),
       },
       quantity: item.quantity,
     }));
 
-    // Obtener la URL base del sitio desde las cabeceras del evento
-    const siteUrl = event.headers.referer || 'http://localhost:8000';
+    // Obtener la URL base del sitio desde las cabeceras
+    const siteUrl = req.headers.referer || 'http://localhost:8000';
 
     // Crear la sesión de pago en Stripe
     const session = await stripe.checkout.sessions.create({
@@ -50,18 +52,10 @@ exports.handler = async (event) => {
       cancel_url: `${siteUrl.split('/cart.html')[0]}/cart.html`,
     });
 
-    return {
-      statusCode: 200,
-      headers: corsHeaders,
-      body: JSON.stringify({ id: session.id }),
-    };
+    return res.status(200).json({ id: session.id });
 
   } catch (error) {
     console.error('Error al crear la sesión de Stripe:', error);
-    return {
-      statusCode: 500,
-      headers: corsHeaders,
-      body: JSON.stringify({ error: 'Error al procesar el pago.' }),
-    };
+    return res.status(500).json({ error: 'Error al procesar el pago.' });
   }
-};
+}
