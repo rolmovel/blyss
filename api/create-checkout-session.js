@@ -24,10 +24,13 @@ export default async function handler(req, res) {
   }
 
   try {
-    const cartItems = req.body; // Vercel ya parsea el JSON automáticamente
+    const { cart, shippingAddress } = req.body;
+
+    // Aquí puedes añadir la lógica para guardar la dirección en tu base de datos
+    // Por ejemplo: await saveAddressToDatabase(shippingAddress);
 
     // Formatear los productos para la API de Stripe
-    const line_items = cartItems.map(item => ({
+    const line_items = cart.map(item => ({
       price_data: {
         currency: 'eur',
         product_data: {
@@ -48,6 +51,15 @@ export default async function handler(req, res) {
       payment_method_types: ['card'],
       line_items: line_items,
       mode: 'payment',
+      shipping_address_collection: {
+        allowed_countries: ['ES'],
+      },
+      metadata: {
+        address: shippingAddress.address,
+        city: shippingAddress.city,
+        state: shippingAddress.state,
+        zip: shippingAddress.zip,
+      },
       success_url: `${siteUrl.split('/cart.html')[0]}/success.html`,
       cancel_url: `${siteUrl.split('/cart.html')[0]}/cart.html`,
     });

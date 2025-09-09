@@ -57,6 +57,34 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span>Total:</span>
                     <span>€${subtotal.toFixed(2)}</span>
                 </div>
+                <div id="shipping-address-container" class="hidden">
+                    <h3 class="shipping-title">Dirección de Envío</h3>
+                    <form id="shipping-form">
+                        <div class="form-group">
+                            <label for="address">Dirección</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ciudad</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">Provincia</label>
+                                <input type="text" id="state" name="state" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">Código Postal</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">País</label>
+                            <input type="text" id="country" name="country" value="España" required>
+                        </div>
+                        <button type="submit" class="cta-button continue-checkout-btn">Continuar al pago</button>
+                    </form>
+                </div>
                 <button class="cta-button checkout-btn">Finalizar Compra</button>
             </div>
         `;
@@ -89,7 +117,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Evento para el botón de finalizar compra
-        document.querySelector('.checkout-btn').addEventListener('click', handleCheckout);
+        document.querySelector('.checkout-btn').addEventListener('click', () => {
+            document.getElementById('shipping-address-container').classList.remove('hidden');
+            document.querySelector('.checkout-btn').classList.add('hidden');
+        });
+
+        document.getElementById('shipping-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            handleCheckout();
+        });
 
     }
 
@@ -97,23 +133,39 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function handleCheckout() {
-    const checkoutButton = document.querySelector('.checkout-btn');
-    checkoutButton.disabled = true;
-    checkoutButton.textContent = 'Redirigiendo al pago...';
+    const continueButton = document.querySelector('.continue-checkout-btn');
+    continueButton.disabled = true;
+    continueButton.textContent = 'Procesando...';
 
     const cart = getCart();
+    const form = document.getElementById('shipping-form');
+    const formData = new FormData(form);
+    const shippingAddress = {
+        address: formData.get('address'),
+        city: formData.get('city'),
+        state: formData.get('state'),
+        zip: formData.get('zip'),
+        country: formData.get('country'),
+    };
+
+    // Aquí se puede añadir la validación de la dirección contra un sistema externo
+
+    const payload = {
+        cart,
+        shippingAddress,
+    };
 
     // Debes reemplazar esta clave con tu clave pública de Stripe
     const stripe = Stripe('pk_test_51S55ZhCckC1cpOptJ09rw791kRBLmZJULxInW0X1Immr2kZ3yzwQ98eGiZhKkEBq7C3J1aMBBfkXOLKef7Ntnp6D00gHsmuM4g');
 
     try {
         // 1. Llama a tu función serverless para crear la sesión de pago
-                const response = await fetch('/api/create-checkout-session', {
+        const response = await fetch('/api/create-checkout-session', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(cart),
+            body: JSON.stringify(payload),
         });
 
         if (!response.ok) {
@@ -130,14 +182,14 @@ async function handleCheckout() {
         if (result.error) {
             // Si hay un error en la redirección (poco común), muéstralo
             alert(result.error.message);
-            checkoutButton.disabled = false;
-            checkoutButton.textContent = 'Finalizar Compra';
+            continueButton.disabled = false;
+            continueButton.textContent = 'Continuar al pago';
         }
 
     } catch (error) {
         console.error('Error al procesar el pago:', error);
         alert('Hubo un problema al redirigir a la pasarela de pago. Por favor, inténtalo de nuevo.');
-        checkoutButton.disabled = false;
-        checkoutButton.textContent = 'Finalizar Compra';
+        continueButton.disabled = false;
+        continueButton.textContent = 'Continuar al pago';
     }
 }

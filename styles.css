@@ -141,6 +141,48 @@ body {
     margin-top: 80px;
 }
 
+/* Estilos para el formulario de dirección */
+#shipping-address-container {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.shipping-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#shipping-form .form-group {
+    margin-bottom: 15px;
+}
+
+#shipping-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#shipping-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#shipping-form .form-row {
+    display: flex;
+    gap: 15px;
+}
+
+#shipping-form .form-row .form-group {
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
+
 /* Section Management */
 .section {
     min-height: calc(100vh - 80px);
