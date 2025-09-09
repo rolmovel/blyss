@@ -4,8 +4,7 @@ const matter = require('gray-matter');
 const { marked } = require('marked');
 
 const articlesDir = path.join(__dirname, 'articles');
-const outputDir = path.join(__dirname, 'dist');
-const outputFile = path.join(outputDir, 'escaparate.json');
+const outputFile = path.join(__dirname, 'escaparate.json');
 
 // Función para obtener todos los archivos .md de la carpeta 'articles'
 function getArticleFiles() {
@@ -71,10 +70,6 @@ function getGalleryImages(galleryPath, defaultImage) {
 function buildEscaparate() {
   console.log('Iniciando la construcción del escaparate...');
 
-  // Asegurarse de que el directorio de salida exista
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
 
   const articleFiles = getArticleFiles();
   if (articleFiles.length === 0) {

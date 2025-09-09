@@ -1,5 +1,5 @@
 ---
-foto: assests/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png
+foto: assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png
 precio: 14.99
 categoria: Unisex
 tallas:
