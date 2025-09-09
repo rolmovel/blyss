@@ -104,7 +104,7 @@ async function handleCheckout() {
     const cart = getCart();
 
     // Debes reemplazar esta clave con tu clave pública de Stripe
-    const stripe = Stripe('TU_CLAVE_PUBLICA_DE_STRIPE');
+    const stripe = Stripe('pk_test_51S55ZhCckC1cpOptJ09rw791kRBLmZJULxInW0X1Immr2kZ3yzwQ98eGiZhKkEBq7C3J1aMBBfkXOLKef7Ntnp6D00gHsmuM4g');
 
     try {
         // 1. Llama a tu función serverless para crear la sesión de pago
