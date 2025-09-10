@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productDetailContainer = document.getElementById('product-detail-container');
 
-    // 1. Obtener el ID del producto de la URL
     const params = new URLSearchParams(window.location.search);
     const productId = params.get('id');
 
@@ -10,14 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // 2. Cargar los datos de los productos
-    fetch('escaparate.json')
+    fetch('/escaparate.json')
         .then(response => {
             if (!response.ok) throw new Error('No se pudo cargar la información de los productos.');
             return response.json();
         })
         .then(products => {
-            // 3. Encontrar el producto específico
             const product = products.find(p => p.id === productId);
 
             if (!product) {
@@ -25,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // 4. Renderizar el producto
             renderProductDetail(product);
         })
         .catch(error => {
@@ -36,15 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderProductDetail(product) {
     const container = document.getElementById('product-detail-container');
-    document.title = `${product.titulo} - Blyss`; // Actualizar el título de la página
+    document.title = `${product.titulo} - Blyss`;
 
-    // Generar HTML para las opciones (con comprobaciones de seguridad)
     const tallasHtml = Array.isArray(product.tallas) ? product.tallas.map(talla => `<button class="size-option">${talla}</button>`).join('') : '';
     const coloresHtml = Array.isArray(product.colores) ? product.colores.map(color => 
         `<div class="color-option" style="background-color: ${color.codigo};" title="${color.nombre}" data-nombre="${color.nombre}" data-codigo="${color.codigo}"></div>`
     ).join('') : '';
     const galeriaHtml = Array.isArray(product.galeria_fotos) ? product.galeria_fotos.map((foto, index) => 
-        `<img src="${foto}" alt="Vista ${index + 1} de ${product.titulo}" class="thumbnail-img ${index === 0 ? 'active' : ''}">`
+        `<img loading="lazy" src="${foto}" alt="Vista ${index + 1} de ${product.titulo}" class="thumbnail-img ${index === 0 ? 'active' : ''}">`
     ).join('') : '';
     const imagenPrincipal = Array.isArray(product.galeria_fotos) && product.galeria_fotos.length > 0 ? product.galeria_fotos[0] : product.foto;
 
@@ -52,7 +47,7 @@ function renderProductDetail(product) {
         <div class="product-detail-layout">
             <div class="product-gallery">
                 <div class="main-image-container">
-                    <img src="${imagenPrincipal}" alt="${product.titulo}" id="main-product-image">
+                    <img loading="lazy" src="${imagenPrincipal}" alt="${product.titulo}" id="main-product-image">
                 </div>
                 <div class="thumbnail-container">
                     ${galeriaHtml}
@@ -86,12 +81,21 @@ function renderProductDetail(product) {
             </div>
         </div>
     `;
+    // mark rendered for tests/verification
+    container.setAttribute('data-rendered', '1');
+
+    // Preseleccionar primera talla y color si existen
+    const firstSize = document.querySelector('.size-option');
+    if (firstSize) firstSize.classList.add('selected');
+    const firstColor = document.querySelector('.color-option');
+    if (firstColor) firstColor.classList.add('selected');
 
     addEventListenersToOptions(product);
 }
 
+// Importante: Usar la función global addToCart definida en js/cart.js
+
 function addEventListenersToOptions(product) {
-    // Event listener para la galería de thumbnails
     const mainImage = document.getElementById('main-product-image');
     const thumbnails = document.querySelectorAll('.thumbnail-img');
     thumbnails.forEach(thumb => {
@@ -102,7 +106,6 @@ function addEventListenersToOptions(product) {
         });
     });
 
-    // Event listener para las tallas
     const sizeOptions = document.querySelectorAll('.size-option');
     sizeOptions.forEach(option => {
         option.addEventListener('click', () => {
@@ -111,7 +114,6 @@ function addEventListenersToOptions(product) {
         });
     });
 
-    // Event listener para los colores
     const colorOptions = document.querySelectorAll('.color-option');
     colorOptions.forEach(option => {
         option.addEventListener('click', () => {
@@ -120,7 +122,6 @@ function addEventListenersToOptions(product) {
         });
     });
 
-    // Event listener para el botón de añadir al carrito
     const addToCartButton = document.querySelector('.add-to-cart-btn');
     if (addToCartButton) {
         addToCartButton.addEventListener('click', () => {
@@ -142,9 +143,12 @@ function addEventListenersToOptions(product) {
                 codigo: selectedColorEl.dataset.codigo
             };
 
-            addToCart(product, selectedSize, selectedColor);
+            if (typeof window.addToCart === 'function') {
+                window.addToCart(product, selectedSize, selectedColor);
+            } else {
+                console.warn('addToCart no está disponible. Asegúrate de cargar js/cart.js antes de js/producto.js');
+            }
 
-            // Feedback visual para el usuario
             addToCartButton.textContent = '¡Añadido!';
             addToCartButton.disabled = true;
             setTimeout(() => {
