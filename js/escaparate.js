@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const productsGallery = document.querySelector('.products-gallery');
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const paginationContainer = document.createElement('div');
-  paginationContainer.classList.add('pagination');
-  productsGallery.insertAdjacentElement('afterend', paginationContainer);
+  const paginationContainer = document.querySelector('.pagination');
 
   if (!productsGallery) {
     console.error('No se encontró la galería de productos.');

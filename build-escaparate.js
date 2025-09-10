@@ -4,7 +4,7 @@ const matter = require('gray-matter');
 const { marked } = require('marked');
 
 const articlesDir = path.join(__dirname, 'articles');
-const outputFile = path.join(__dirname, 'escaparate.json');
+const outputFile = path.join(__dirname, 'dist', 'escaparate.json');
 
 // Función para obtener todos los archivos .md de la carpeta 'articles'
 function getArticleFiles() {
