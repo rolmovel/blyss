@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       pageButton.classList.add('page-btn');
       if (i === currentPage) {
         pageButton.classList.add('active');
+        pageButton.setAttribute('aria-current', 'page');
       }
       pageButton.addEventListener('click', () => {
         currentPage = i;
@@ -100,6 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
       button.classList.add('active');
       const filter = button.getAttribute('data-filter');
       applyFilter(filter);
+
+      // Accesibilidad: aria-pressed en filtros
+      filterButtons.forEach(btn => btn.setAttribute('aria-pressed', btn === button ? 'true' : 'false'));
     });
   });
+
+  // Estado inicial accesible de los filtros
+  filterButtons.forEach(btn => btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false'));
 });

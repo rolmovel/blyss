@@ -34,10 +34,12 @@ function renderProductDetail(product) {
     const container = document.getElementById('product-detail-container');
     document.title = `${product.titulo} - Blyss`;
 
-    const tallasHtml = Array.isArray(product.tallas) ? product.tallas.map(talla => `<button class="size-option">${talla}</button>`).join('') : '';
+    const hasSizes = Array.isArray(product.tallas) && product.tallas.length > 0;
+    const tallasHtml = hasSizes ? product.tallas.map(talla => `<button class="size-option">${talla}</button>`).join('') : '';
     const coloresHtml = Array.isArray(product.colores) ? product.colores.map(color => 
         `<div class="color-option" style="background-color: ${color.codigo};" title="${color.nombre}" data-nombre="${color.nombre}" data-codigo="${color.codigo}"></div>`
     ).join('') : '';
+    const hasColors = Array.isArray(product.colores) && product.colores.length > 0;
     const galeriaHtml = Array.isArray(product.galeria_fotos) ? product.galeria_fotos.map((foto, index) => 
         `<img loading="lazy" src="${foto}" alt="Vista ${index + 1} de ${product.titulo}" class="thumbnail-img ${index === 0 ? 'active' : ''}">`
     ).join('') : '';
@@ -58,18 +60,20 @@ function renderProductDetail(product) {
                 <p class="product-price-detail">€${product.precio.toFixed(2)}</p>
                 
                 <div class="product-options">
+                    ${hasSizes ? `
                     <div class="option-group">
                         <h3 class="option-title">Talla:</h3>
                         <div class="size-selector">
                             ${tallasHtml}
                         </div>
-                    </div>
+                    </div>` : ''}
+                    ${hasColors ? `
                     <div class="option-group">
                         <h3 class="option-title">Color:</h3>
                         <div class="color-selector">
                             ${coloresHtml}
                         </div>
-                    </div>
+                    </div>` : ''}
                 </div>
 
                 <button class="add-to-cart-btn">Añadir al carrito</button>
@@ -80,6 +84,7 @@ function renderProductDetail(product) {
                 </div>
             </div>
         </div>
+        <div id="toast" role="status" aria-live="polite" aria-atomic="true" class="toast" hidden></div>
     `;
     // mark rendered for tests/verification
     container.setAttribute('data-rendered', '1');
@@ -125,23 +130,27 @@ function addEventListenersToOptions(product) {
     const addToCartButton = document.querySelector('.add-to-cart-btn');
     if (addToCartButton) {
         addToCartButton.addEventListener('click', () => {
+            const sizeOptions = document.querySelectorAll('.size-option');
+            const colorOptionsEls = document.querySelectorAll('.color-option');
+            const hasSizes = sizeOptions.length > 0;
+            const hasColors = colorOptionsEls.length > 0;
             const selectedSizeEl = document.querySelector('.size-option.selected');
             const selectedColorEl = document.querySelector('.color-option.selected');
 
-            if (!selectedSizeEl) {
+            if (hasSizes && !selectedSizeEl) {
                 alert('Por favor, selecciona una talla.');
                 return;
             }
-            if (!selectedColorEl) {
+            if (hasColors && !selectedColorEl) {
                 alert('Por favor, selecciona un color.');
                 return;
             }
 
-            const selectedSize = selectedSizeEl.textContent;
-            const selectedColor = {
+            const selectedSize = selectedSizeEl ? selectedSizeEl.textContent : undefined;
+            const selectedColor = selectedColorEl ? {
                 nombre: selectedColorEl.dataset.nombre,
                 codigo: selectedColorEl.dataset.codigo
-            };
+            } : undefined;
 
             if (typeof window.addToCart === 'function') {
                 window.addToCart(product, selectedSize, selectedColor);
@@ -149,12 +158,19 @@ function addEventListenersToOptions(product) {
                 console.warn('addToCart no está disponible. Asegúrate de cargar js/cart.js antes de js/producto.js');
             }
 
-            addToCartButton.textContent = '¡Añadido!';
-            addToCartButton.disabled = true;
-            setTimeout(() => {
-                addToCartButton.textContent = 'Añadir al carrito';
-                addToCartButton.disabled = false;
-            }, 2000);
+            showToast('Producto añadido al carrito');
         });
     }
+}
+
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    if (!toast) return;
+    toast.textContent = message;
+    toast.hidden = false;
+    toast.classList.add('show');
+    setTimeout(() => {
+        toast.classList.remove('show');
+        toast.hidden = true;
+    }, 1800);
 }
