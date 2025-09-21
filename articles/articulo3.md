@@ -8,12 +8,12 @@ tallas:
   - L
   - XL
 colores:
-  - nombre: Sport Grey
-    codigo: "#c4c0be"
-  - nombre: Light Blue
-    codigo: "#d9efff"
-  - nombre: White
-    codigo: "#fffefa"
+  - nombre: Black
+    codigo: "#141313"
+  - nombre: Cardinal
+    codigo: "#c21b3a"
+  - nombre: Military Green
+    codigo: "#737a5f"
 galeria: assets/products/articulo3
 ---
 
