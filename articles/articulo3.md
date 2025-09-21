@@ -1,9 +1,22 @@
 ---
-foto: assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png
-precio: 120.50
-enlace: #
-categoria: Hombre
+foto: assets/products/articulo3/articulo3_1.png
+precio: 14.99
+categoria: Unisex
+tallas:
+  - S
+  - M
+  - L
+  - XL
+colores:
+  - nombre: Sport Grey
+    codigo: "#c4c0be"
+  - nombre: Light Blue
+    codigo: "#d9efff"
+  - nombre: White
+    codigo: "#fffefa"
+galeria: assets/products/articulo3
 ---
-# Chaqueta de Cuero
 
-Una chaqueta de cuero clásica que nunca pasa de moda.
+# Camiseta Básica Blyss
+
+Camiseta básica 100% algodón en diferentes colores. Perfecta para cualquier look, cómoda y versátil. Porque a veces, menos es más. Tu estilo, tu mundo.

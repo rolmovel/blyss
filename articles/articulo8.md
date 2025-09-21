@@ -1,8 +1,19 @@
 ---
-foto: assets/products/articulo2/unisex-classic-tee-black-back-68c04f7569335.png
+foto: assets/products/articulo8/articulo8_1.png
 precio: 150.00
-enlace: #
 categoria: Mujer
+tallas:
+  - S
+  - M
+  - L
+colores:
+  - nombre: Black
+    codigo: "#141313"
+  - nombre: Cardinal
+    codigo: "#c21b3a"
+  - nombre: Military Green
+    codigo: "#737a5f"
+galeria: assets/products/articulo8
 ---
 # Abrigo de Lana
 

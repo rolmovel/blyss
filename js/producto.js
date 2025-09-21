@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    fetch('/escaparate.json')
+    fetch('escaparate.json')
         .then(response => {
             if (!response.ok) throw new Error('No se pudo cargar la información de los productos.');
             return response.json();

@@ -1,20 +1,19 @@
 ---
-foto: assets/basic1.png
+foto: assets/products/articulo1/articulo1_1.png
 precio: 14.99
-categoria: Mujer
+categoria: Unisex
 tallas:
-  - XS
   - S
   - M
   - L
   - XL
 colores:
-  - nombre: Negro
-    codigo: "#000000"
-  - nombre: Blanco
-    codigo: "#FFFFFF"
-  - nombre: Rojo
-    codigo: "#E74C3C"
+  - nombre: Black
+    codigo: "#141313"
+  - nombre: Cardinal
+    codigo: "#c21b3a"
+  - nombre: Military Green
+    codigo: "#737a5f"
 galeria: assets/products/articulo1
 ---
 

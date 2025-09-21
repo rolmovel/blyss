@@ -49,21 +49,25 @@ function processArticles(files) {
 
 // Nueva función para obtener las imágenes de la galería
 function getGalleryImages(galleryPath, defaultImage) {
-  if (!galleryPath) {
-    return [defaultImage]; // Devuelve la imagen principal si no hay galería
+  let gallery = [];
+  if (galleryPath) {
+    const fullGalleryPath = path.join(__dirname, galleryPath);
+    try {
+      if (fs.existsSync(fullGalleryPath)) {
+        const imageFiles = fs.readdirSync(fullGalleryPath);
+        gallery = imageFiles.map(file => `/${path.join(galleryPath, file).replace(/\\/g, '/')}`);
+      }
+    } catch (error) {
+      console.error(`Error al leer la galería de imágenes en: ${fullGalleryPath}`, error);
+    }
   }
 
-  const fullGalleryPath = path.join(__dirname, galleryPath);
-  try {
-    if (fs.existsSync(fullGalleryPath)) {
-      const imageFiles = fs.readdirSync(fullGalleryPath);
-      return imageFiles.map(file => path.join(galleryPath, file).replace(/\\/g, '/'));
-    }
-    return [defaultImage];
-  } catch (error) {
-    console.error(`Error al leer la galería de imágenes en: ${fullGalleryPath}`, error);
-    return [defaultImage];
+  const mainImage = defaultImage ? `/${defaultImage}` : null;
+  if (mainImage && !gallery.includes(mainImage)) {
+    gallery.unshift(mainImage);
   }
+
+  return gallery;
 }
 
 // Función principal para construir el escaparate

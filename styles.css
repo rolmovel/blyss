@@ -1102,3 +1102,21 @@ html {
     background: var(--primary-color);
     color: var(--white);
 }
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-swatches {
+    display: flex;
+    gap: 5px;
+}
+
+.color-swatch {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}

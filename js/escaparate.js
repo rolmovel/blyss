@@ -32,13 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
       productCard.classList.add('product-card');
       productCard.setAttribute('data-category', article.categoria.toLowerCase());
 
+      const hasColors = Array.isArray(article.colores) && article.colores.length > 0;
+      const coloresHtml = hasColors ? article.colores.map(color => `<div class="color-swatch" style="background-color: ${color.codigo};"></div>`).join('') : '';
+
       productCard.innerHTML = `
         <div class="product-image">
           <img loading="lazy" src="${article.foto}" alt="${article.titulo}" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="product-info">
           <h3 class="product-name">${article.titulo}</h3>
-          <p class="product-price">€${article.precio.toFixed(2)}</p>
+          <div class="product-details">
+            <p class="product-price">€${article.precio.toFixed(2)}</p>
+            <div class="color-swatches">${coloresHtml}</div>
+          </div>
         </div>
       `;
       productsGallery.appendChild(productCard);
