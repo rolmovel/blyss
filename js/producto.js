@@ -103,26 +103,41 @@ function renderProductDetail(product) {
 function addEventListenersToOptions(product) {
     const mainImage = document.getElementById('main-product-image');
     const thumbnails = document.querySelectorAll('.thumbnail-img');
-    thumbnails.forEach(thumb => {
-        thumb.addEventListener('click', () => {
+    const sizeOptions = document.querySelectorAll('.size-option');
+    const colorOptions = document.querySelectorAll('.color-option');
+
+    // Thumbnail click updates main image
+    thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
             mainImage.src = thumb.src;
             thumbnails.forEach(t => t.classList.remove('active'));
             thumb.classList.add('active');
+
+            if (colorOptions[index]) {
+                colorOptions.forEach(c => c.classList.remove('selected'));
+                colorOptions[index].classList.add('selected');
+            }
         });
     });
 
-    const sizeOptions = document.querySelectorAll('.size-option');
+    colorOptions.forEach((option, index) => {
+        option.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (thumbnails[index]) {
+                thumbnails[index].click();
+            }
+        });
+    });
+
+    // Size selection
     sizeOptions.forEach(option => {
         option.addEventListener('click', () => {
             sizeOptions.forEach(opt => opt.classList.remove('selected'));
-            option.classList.add('selected');
-        });
-    });
-
-    const colorOptions = document.querySelectorAll('.color-option');
-    colorOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            colorOptions.forEach(opt => opt.classList.remove('selected'));
             option.classList.add('selected');
         });
     });
