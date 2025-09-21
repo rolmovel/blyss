@@ -16,6 +16,6 @@ colores:
     codigo: "#fffefa"
 galeria: assets/products/articulo7
 ---
-# Pantalones Chinos
+# Camiseta "Graffiti"
 
-Pantalones chinos de corte slim, cómodos y elegantes.
+Exprésate con nuestra camiseta "Graffiti". Con el logo de Blyss en un estilo urbano y llamativo, esta prenda de algodón 100% es la combinación perfecta de comodidad y actitud. Ideal para destacar en cualquier multitud.

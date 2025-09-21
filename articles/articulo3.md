@@ -17,6 +17,6 @@ colores:
 galeria: assets/products/articulo3
 ---
 
-# Camiseta Básica Blyss
+# Camiseta "Corona"
 
-Camiseta básica 100% algodón en diferentes colores. Perfecta para cualquier look, cómoda y versátil. Porque a veces, menos es más. Tu estilo, tu mundo.
+Sencilla, pero con un toque de realeza. Esta camiseta de algodón 100% presenta nuestro icónico logo de corona, recordándote que tu estilo es tu reino. Cómoda, versátil y lista para cualquier ocasión.

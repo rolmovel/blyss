@@ -16,6 +16,6 @@ colores:
     codigo: "#fffefa"
 galeria: assets/products/articulo4
 ---
-# Blusa Elegante
+# Camiseta "Corona"
 
-Blusa de seda ideal para ocasiones especiales.
+Sencilla, pero con un toque de realeza. Esta camiseta de algodón 100% presenta nuestro icónico logo de corona, recordándote que tu estilo es tu reino. Cómoda, versátil y lista para cualquier ocasión.

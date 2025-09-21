@@ -17,6 +17,6 @@ colores:
 galeria: assets/products/articulo10
 ---
 
-# Producto 10
+# Camiseta "Street Art"
 
-Descripción del producto 10.
+Lleva el arte a la calle con nuestra camiseta "Street Art". Con un diseño de graffiti audaz y centrado, esta prenda de algodón 100% es una declaración de estilo. Perfecta para quienes viven y respiran la cultura urbana.

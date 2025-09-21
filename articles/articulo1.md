@@ -17,6 +17,6 @@ colores:
 galeria: assets/products/articulo1
 ---
 
-# Camiseta Básica Blyss
+# Camiseta "Graffiti"
 
-Camiseta básica 100% algodón en diferentes colores. Perfecta para cualquier look, cómoda y versátil. Porque a veces, menos es más. Tu estilo, tu mundo.
+Exprésate con nuestra camiseta "Graffiti". Con el logo de Blyss en un estilo urbano y llamativo, esta prenda de algodón 100% es la combinación perfecta de comodidad y actitud. Ideal para destacar en cualquier multitud.

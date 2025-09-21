@@ -15,6 +15,6 @@ colores:
     codigo: "#fffefa"
 galeria: assets/products/articulo6
 ---
-# Falda Plisada
+# Camiseta "Doble Estilo"
 
-Falda plisada de media altura, versátil y moderna.
+¿Por qué elegir un solo estilo cuando puedes tener dos? Nuestra camiseta "Doble Estilo" presenta el icónico logo de corona en el pecho y un llamativo diseño de graffiti en la espalda. Hecha con algodón 100% para una comodidad inigualable, es la prenda perfecta para quienes no temen mostrar todas sus facetas.

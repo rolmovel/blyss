@@ -17,6 +17,6 @@ colores:
 galeria: assets/products/articulo11
 ---
 
-# Producto 11
+# Camiseta "Graffiti"
 
-Descripción del producto 11.
+Exprésate con nuestra camiseta "Graffiti". Con el logo de Blyss en un estilo urbano y llamativo, esta prenda de algodón 100% es la combinación perfecta de comodidad y actitud. Ideal para destacar en cualquier multitud.

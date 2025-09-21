@@ -16,6 +16,6 @@ colores:
     codigo: "#737a5f"
 galeria: assets/products/articulo5
 ---
-# Camisa de Lino
+# Camiseta "Doble Estilo"
 
-Camisa de lino transpirable, perfecta para el calor.
+¿Por qué elegir un solo estilo cuando puedes tener dos? Nuestra camiseta "Doble Estilo" presenta el icónico logo de corona en el pecho y un llamativo diseño de graffiti en la espalda. Hecha con algodón 100% para una comodidad inigualable, es la prenda perfecta para quienes no temen mostrar todas sus facetas.

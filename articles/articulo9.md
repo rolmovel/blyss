@@ -16,6 +16,6 @@ colores:
     codigo: "#fffefa"
 galeria: assets/products/articulo9
 ---
-# Sudadera con Capucha
+# Camiseta "Street Art"
 
-Sudadera de algodón orgánico, suave y resistente.
+Lleva el arte a la calle con nuestra camiseta "Street Art". Con un diseño de graffiti audaz y centrado, esta prenda de algodón 100% es una declaración de estilo. Perfecta para quienes viven y respiran la cultura urbana.
