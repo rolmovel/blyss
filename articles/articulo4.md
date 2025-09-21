@@ -1,7 +1,7 @@
 ---
 foto: assets/products/articulo4/articulo4_1.png
-precio: 45.00
-categoria: Mujer
+precio: 13.99
+categoria: Unisex
 tallas:
   - S
   - M

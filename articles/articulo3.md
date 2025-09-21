@@ -1,6 +1,6 @@
 ---
 foto: assets/products/articulo3/articulo3_1.png
-precio: 14.99
+precio: 13.99
 categoria: Unisex
 tallas:
   - S

@@ -1,7 +1,7 @@
 ---
 foto: assets/products/articulo6/articulo6_1.png
-precio: 75.99
-categoria: Mujer
+precio: 18.99
+categoria: Unisex
 tallas:
   - S
   - M

@@ -1,6 +1,6 @@
 ---
 foto: assets/products/articulo12/articulo12_1.png
-precio: 0.00
+precio: 13.99
 categoria: Unisex
 tallas:
   - S

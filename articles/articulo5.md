@@ -1,7 +1,7 @@
 ---
 foto: assets/products/articulo5/articulo5_1.png
-precio: 65.00
-categoria: Hombre
+precio: 18.99
+categoria: Unisex
 tallas:
   - S
   - M

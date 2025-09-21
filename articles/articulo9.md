@@ -1,7 +1,7 @@
 ---
 foto: assets/products/articulo9/articulo9_1.png
-precio: 49.99
-categoria: Hombre
+precio: 13.99
+categoria: Unisex
 tallas:
   - S
   - M

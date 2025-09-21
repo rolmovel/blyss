@@ -1,7 +1,7 @@
 ---
 foto: assets/products/articulo7/articulo7_1.png
-precio: 55.00
-categoria: Hombre
+precio: 13.99
+categoria: Unisex
 tallas:
   - S
   - M

@@ -1,7 +1,7 @@
 ---
 foto: assets/products/articulo8/articulo8_1.png
-precio: 150.00
-categoria: Mujer
+precio: 13.99
+categoria: Unisex
 tallas:
   - S
   - M
