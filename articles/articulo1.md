@@ -19,4 +19,4 @@ galeria: assets/products/articulo1
 
 # Camiseta "Graffiti"
 
-Exprésate con nuestra camiseta "Graffiti". Con el logo de Blyss en un estilo urbano y llamativo, esta prenda de algodón 100% es la combinación perfecta de comodidad y actitud. Ideal para destacar en cualquier multitud.
+Exprésate con nuestra camiseta "Graffiti". Con el logo de Blyss en un estilo urbano y llamativo, esta prenda de algodón 100% es la combinación  perfecta de comodidad y actitud. Ideal para destacar en cualquier multitud.
