@@ -267,8 +267,8 @@ body {
 }
 
 .hero-video {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 380px;
     object-fit: cover;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -708,8 +708,8 @@ body {
     }
     
     .hero-video {
-        width: 300px;
-        height: 350px;
+        width: 250px;
+        height: 315px;
         margin: 0 auto;
     }
     
@@ -752,8 +752,8 @@ body {
     }
     
     .hero-video {
-        width: 250px;
-        height: 300px;
+        width: 200px;
+        height: 250px;
     }
     
     .team-grid {
