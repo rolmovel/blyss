@@ -1,0 +1,1819 @@
+[
+    {
+      "code": 200,
+      "result": {
+        "sync_product": {
+          "id": 393698088,
+          "external_id": "68d12301004268",
+          "name": "Unisex classic tee",
+          "variants": 12,
+          "synced": 12,
+          "thumbnail_url": "https://files.cdn.printful.com/files/abd/abd68af3521abbe661eb106f0f013abe_preview.png",
+          "is_ignored": false
+        },
+        "sync_variants": [
+          {
+            "id": 4979309117,
+            "external_id": "68d123010042f2",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Sport Grey / S",
+            "synced": true,
+            "variant_id": 11571,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Sport-Grey-S",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11571,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11571_1642678426.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Sport Grey / S)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691753,
+                "type": "preview",
+                "hash": "75189bac5b5a33ccd66b2b212b8fe582",
+                "url": null,
+                "filename": "unisex-classic-tee-sport-grey-front-68d122eced2b0.jpg",
+                "mime_type": "image/jpeg",
+                "size": 225904,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "S",
+            "color": "Sport Grey",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309118,
+            "external_id": "68d12301004361",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Sport Grey / M",
+            "synced": true,
+            "variant_id": 11572,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Sport-Grey-M",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11572,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11572_1642678426.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Sport Grey / M)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691753,
+                "type": "preview",
+                "hash": "75189bac5b5a33ccd66b2b212b8fe582",
+                "url": null,
+                "filename": "unisex-classic-tee-sport-grey-front-68d122eced2b0.jpg",
+                "mime_type": "image/jpeg",
+                "size": 225904,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "M",
+            "color": "Sport Grey",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309119,
+            "external_id": "68d123010043b1",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Sport Grey / L",
+            "synced": true,
+            "variant_id": 11573,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Sport-Grey-L",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11573,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11573_1642678415.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Sport Grey / L)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691753,
+                "type": "preview",
+                "hash": "75189bac5b5a33ccd66b2b212b8fe582",
+                "url": null,
+                "filename": "unisex-classic-tee-sport-grey-front-68d122eced2b0.jpg",
+                "mime_type": "image/jpeg",
+                "size": 225904,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "L",
+            "color": "Sport Grey",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309120,
+            "external_id": "68d12301004409",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Sport Grey / XL",
+            "synced": true,
+            "variant_id": 11574,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Sport-Grey-XL",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11574,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11574_1642678426.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Sport Grey / XL)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691753,
+                "type": "preview",
+                "hash": "75189bac5b5a33ccd66b2b212b8fe582",
+                "url": null,
+                "filename": "unisex-classic-tee-sport-grey-front-68d122eced2b0.jpg",
+                "mime_type": "image/jpeg",
+                "size": 225904,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/751/75189bac5b5a33ccd66b2b212b8fe582_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "XL",
+            "color": "Sport Grey",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309121,
+            "external_id": "68d12301004443",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Light Blue / S",
+            "synced": true,
+            "variant_id": 15861,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Light-Blue-S",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 15861,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/15861_1661694008.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Light Blue / S)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691754,
+                "type": "preview",
+                "hash": "816bafc20fb4183b9706f4cae134bdb6",
+                "url": null,
+                "filename": "unisex-classic-tee-light-blue-front-68d122ecec626.jpg",
+                "mime_type": "image/jpeg",
+                "size": 69981,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "S",
+            "color": "Light Blue",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309122,
+            "external_id": "68d12301004493",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Light Blue / M",
+            "synced": true,
+            "variant_id": 15862,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Light-Blue-M",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 15862,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/15862_1661693998.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Light Blue / M)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691754,
+                "type": "preview",
+                "hash": "816bafc20fb4183b9706f4cae134bdb6",
+                "url": null,
+                "filename": "unisex-classic-tee-light-blue-front-68d122ecec626.jpg",
+                "mime_type": "image/jpeg",
+                "size": 69981,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "M",
+            "color": "Light Blue",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309123,
+            "external_id": "68d123010044e2",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Light Blue / L",
+            "synced": true,
+            "variant_id": 15863,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Light-Blue-L",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 15863,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/15863_1661693998.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Light Blue / L)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691754,
+                "type": "preview",
+                "hash": "816bafc20fb4183b9706f4cae134bdb6",
+                "url": null,
+                "filename": "unisex-classic-tee-light-blue-front-68d122ecec626.jpg",
+                "mime_type": "image/jpeg",
+                "size": 69981,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "L",
+            "color": "Light Blue",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309124,
+            "external_id": "68d12301004534",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / Light Blue / XL",
+            "synced": true,
+            "variant_id": 15864,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_Light-Blue-XL",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 15864,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/15864_1661694008.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (Light Blue / XL)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691754,
+                "type": "preview",
+                "hash": "816bafc20fb4183b9706f4cae134bdb6",
+                "url": null,
+                "filename": "unisex-classic-tee-light-blue-front-68d122ecec626.jpg",
+                "mime_type": "image/jpeg",
+                "size": 69981,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/816/816bafc20fb4183b9706f4cae134bdb6_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "XL",
+            "color": "Light Blue",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309125,
+            "external_id": "68d12301004578",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / White / S",
+            "synced": true,
+            "variant_id": 11576,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_White-S",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11576,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11576_1693310991.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (White / S)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691755,
+                "type": "preview",
+                "hash": "d2c6c0e7cf286419eb3c745b04bd15a8",
+                "url": null,
+                "filename": "unisex-classic-tee-white-front-68d122eced3d1.jpg",
+                "mime_type": "image/jpeg",
+                "size": 64510,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "S",
+            "color": "White",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309126,
+            "external_id": "68d123010045c2",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / White / M",
+            "synced": true,
+            "variant_id": 11577,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_White-M",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11577,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11577_1693310981.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (White / M)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691755,
+                "type": "preview",
+                "hash": "d2c6c0e7cf286419eb3c745b04bd15a8",
+                "url": null,
+                "filename": "unisex-classic-tee-white-front-68d122eced3d1.jpg",
+                "mime_type": "image/jpeg",
+                "size": 64510,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "M",
+            "color": "White",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309127,
+            "external_id": "68d12301004613",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / White / L",
+            "synced": true,
+            "variant_id": 11578,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_White-L",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11578,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11578_1693310980.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (White / L)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691755,
+                "type": "preview",
+                "hash": "d2c6c0e7cf286419eb3c745b04bd15a8",
+                "url": null,
+                "filename": "unisex-classic-tee-white-front-68d122eced3d1.jpg",
+                "mime_type": "image/jpeg",
+                "size": 64510,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "L",
+            "color": "White",
+            "availability_status": "active"
+          },
+          {
+            "id": 4979309128,
+            "external_id": "68d12301004659",
+            "sync_product_id": 393698088,
+            "name": "Unisex classic tee / White / XL",
+            "synced": true,
+            "variant_id": 11579,
+            "main_category_id": 6,
+            "warehouse_product_id": null,
+            "warehouse_product_variant_id": null,
+            "retail_price": "10.73",
+            "sku": "68D12300F3D4E_White-XL",
+            "currency": "EUR",
+            "product": {
+              "variant_id": 11579,
+              "product_id": 438,
+              "image": "https://files.cdn.printful.com/products/438/11579_1693310991.jpg",
+              "name": "Unisex Classic Tee | Gildan 5000 (White / XL)"
+            },
+            "files": [
+              {
+                "id": 877691601,
+                "type": "default",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691601/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691604,
+                "type": "back",
+                "hash": null,
+                "url": null,
+                "filename": "bd6745987704a288a5781156d2fb5fbe.png",
+                "mime_type": "image/png",
+                "size": 0,
+                "width": 1800,
+                "height": 2400,
+                "dpi": 150,
+                "status": "ok",
+                "created": 1758536425,
+                "thumbnail_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/printfile-preview/877691604/bd6745987704a288a5781156d2fb5fbe_preview.png",
+                "visible": false,
+                "is_temporary": true,
+                "message": "",
+                "options": [],
+                "stitch_count_tier": null
+              },
+              {
+                "id": 877691755,
+                "type": "preview",
+                "hash": "d2c6c0e7cf286419eb3c745b04bd15a8",
+                "url": null,
+                "filename": "unisex-classic-tee-white-front-68d122eced3d1.jpg",
+                "mime_type": "image/jpeg",
+                "size": 64510,
+                "width": 1000,
+                "height": 1000,
+                "dpi": null,
+                "status": "ok",
+                "created": 1758536448,
+                "thumbnail_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_thumb.png",
+                "preview_url": "https://files.cdn.printful.com/files/d2c/d2c6c0e7cf286419eb3c745b04bd15a8_preview.png",
+                "visible": false,
+                "is_temporary": false,
+                "message": "",
+                "stitch_count_tier": null
+              }
+            ],
+            "options": [
+              {
+                "id": "embroidery_type",
+                "value": "flat"
+              },
+              {
+                "id": "thread_colors",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors",
+                "value": []
+              },
+              {
+                "id": "thread_colors_3d",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_left",
+                "value": []
+              },
+              {
+                "id": "thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_chest_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_large_center",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_left_top",
+                "value": []
+              },
+              {
+                "id": "thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "text_thread_colors_sleeve_right_top",
+                "value": []
+              },
+              {
+                "id": "lifelike",
+                "value": false
+              }
+            ],
+            "is_ignored": false,
+            "size": "XL",
+            "color": "White",
+            "availability_status": "active"
+          }
+        ]
+      },
+      "extra": []
+    }
+  ]

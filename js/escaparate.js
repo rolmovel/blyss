@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       productCard.innerHTML = `
         <div class="product-image">
-          <img loading="lazy" src="${article.foto}" alt="${article.titulo}" style="width: 100%; height: 100%; object-fit: cover;">
+          <img loading="lazy" src="${article.galeria_fotos && article.galeria_fotos.length > 0 ? article.galeria_fotos[0] : article.foto}" alt="${article.titulo}" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="product-info">
           <h3 class="product-name">${article.titulo}</h3>

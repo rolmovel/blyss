@@ -27,13 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
         productCard.href = `producto.html?id=${article.id}`;
         productCard.classList.add('product-card');
 
+        // Generar los colores como elementos HTML
+        const hasColors = Array.isArray(article.colores) && article.colores.length > 0;
+        const coloresHtml = hasColors ? article.colores.map(color =>
+          `<div class="color-swatch" style="background-color: ${color.codigo};" title="${color.nombre}"></div>`
+        ).join('') : '';
+
         productCard.innerHTML = `
           <div class="product-image">
-            <img loading="lazy" src="${article.foto}" alt="${article.titulo}" style="width: 100%; height: 100%; object-fit: cover;">
+            <img loading="lazy" src="${article.galeria_fotos && article.galeria_fotos.length > 0 ? article.galeria_fotos[0] : article.foto}" alt="${article.titulo}" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="product-info">
             <h3 class="product-name">${article.titulo}</h3>
             <p class="product-price">€${article.precio.toFixed(2)}</p>
+            ${hasColors ? `<div class="color-swatches">${coloresHtml}</div>` : ''}
           </div>
         `;
         featuredGrid.appendChild(productCard);

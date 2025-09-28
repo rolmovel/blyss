@@ -37,6 +37,9 @@ export default async function handler(req, res) {
           name: item.titulo,
           description: `Talla: ${item.size}, Color: ${item.color.nombre}`,
           images: [item.foto],
+          metadata: {
+            variant_id: item.cartItemId
+          }
         },
         unit_amount: Math.round(item.precio * 100),
       },

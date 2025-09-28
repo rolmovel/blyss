@@ -13,11 +13,16 @@ function saveCart(cart) {
 }
 
 // Añadir un producto al carrito
-function addToCart(product, size, color) {
+function addToCart(product, variantInfo) {
     const cart = getCart();
-    
-    // Crear un ID único para el item en el carrito basado en el producto, talla y color
-    const cartItemId = `${product.id}-${size}-${color.nombre}`;
+
+    // Usar el printfulId como ID único si existe. Si no, crear uno a partir de talla y color.
+    const cartItemId = variantInfo.printfulId ? variantInfo.printfulId.toString() : `${product.id}-${variantInfo.size}-${variantInfo.color.nombre}`;
+
+    if (!cartItemId) {
+        console.error('El producto que intentas añadir no tiene un identificador único.');
+        return;
+    }
 
     const existingItem = cart.find(item => item.cartItemId === cartItemId);
 
@@ -27,13 +32,13 @@ function addToCart(product, size, color) {
     } else {
         // Si no existe, añadirlo como nuevo item
         cart.push({
-            cartItemId,
-            id: product.id,
+            cartItemId: cartItemId, // ID único (printfulId si existe)
+            id: product.id, // ID del producto base
             titulo: product.titulo,
-            precio: product.precio,
+            precio: product.precio, // Usar el precio base del producto
             foto: product.foto,
-            size,
-            color,
+            size: variantInfo.size,
+            color: variantInfo.color,
             quantity: 1
         });
     }
