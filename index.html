@@ -49,10 +49,21 @@
                 <a href="escaparate.html" class="cta-button">Explorar Colección</a>
             </div>
             <div class="hero-image">
-                <video class="hero-video" autoplay muted loop>
-                    <source src="assets/video/hero.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
+                <div class="hero-video-container">
+                    <video class="hero-video hero-video-1" preload="metadata">
+                        <source src="assets/video/hero.mp4" type="video/mp4">
+                    </video>
+                    <video class="hero-video hero-video-2" preload="metadata" style="display: none;">
+                        <source src="assets/video/hero2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                    <div class="flash-text-container">
+                        <div class="flash-text">Blyss</div>
+                        <div class="flash-text">Style</div>
+                        <div class="flash-text">Tu mundo</div>
+                        <div class="flash-text">Tu estilo</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -102,5 +113,6 @@
     <script src="script.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/destacados.js"></script>
+    <script src="js/hero-video.js"></script>
 </body>
 </html>

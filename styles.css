@@ -266,12 +266,82 @@ body {
     align-items: center;
 }
 
-.hero-video {
+.hero-video-container {
+    position: relative;
     width: 300px;
     height: 380px;
-    object-fit: cover;
     border-radius: var(--border-radius);
+    overflow: hidden;
     box-shadow: var(--shadow);
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+}
+
+.flash-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.flash-text {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.flash-text:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.flash-text:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.flash-text:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.flash-text:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.flash-text.flash {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 1), 0 0 80px rgba(255, 255, 255, 0.5);
 }
 
 /* Featured Products */
@@ -707,7 +777,7 @@ body {
         font-size: 2.5rem;
     }
     
-    .hero-video {
+    .hero-video-container {
         width: 250px;
         height: 315px;
         margin: 0 auto;
@@ -751,9 +821,13 @@ body {
         font-size: 2rem;
     }
     
-    .hero-video {
+    .hero-video-container {
         width: 200px;
         height: 250px;
+    }
+
+    .flash-text {
+        font-size: 2rem;
     }
     
     .team-grid {
