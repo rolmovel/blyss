@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Base de datos de códigos de colores para productos Printful",
+    "lastUpdated": "2025-09-28",
+    "source": "Colores verificados manualmente de productos Printful"
+  },
+  "colors": {
+    "Black": {
+      "hex": "#000000",
+      "name": "Negro"
+    },
+    "White": {
+      "hex": "#FFFFFF",
+      "name": "Blanco"
+    },
+    "Sport Grey": {
+      "hex": "#D3D3D3",
+      "name": "Gris Deportivo"
+    },
+    "Light Blue": {
+      "hex": "#ADD8E6",
+      "name": "Azul Claro"
+    },
+    "Cardinal": {
+      "hex": "#C41E3A",
+      "name": "Cardenal"
+    },
+    "Military Green": {
+      "hex": "#4B5320",
+      "name": "Verde Militar"
+    },
+    "Navy": {
+      "hex": "#000080",
+      "name": "Azul Marino"
+    },
+    "Red": {
+      "hex": "#FF0000",
+      "name": "Rojo"
+    },
+    "Royal Blue": {
+      "hex": "#4169E1",
+      "name": "Azul Real"
+    },
+    "Forest Green": {
+      "hex": "#228B22",
+      "name": "Verde Bosque"
+    },
+    "Purple": {
+      "hex": "#800080",
+      "name": "Púrpura"
+    },
+    "Pink": {
+      "hex": "#FFC0CB",
+      "name": "Rosa"
+    },
+    "Yellow": {
+      "hex": "#FFFF00",
+      "name": "Amarillo"
+    },
+    "Orange": {
+      "hex": "#FFA500",
+      "name": "Naranja"
+    },
+    "Brown": {
+      "hex": "#A52A2A",
+      "name": "Marrón"
+    },
+    "Heather Grey": {
+      "hex": "#9B9B9B",
+      "name": "Gris Jaspeado"
+    },
+    "Charcoal": {
+      "hex": "#36454F",
+      "name": "Carbón"
+    },
+    "Maroon": {
+      "hex": "#800000",
+      "name": "Granate"
+    }
+  }
+}

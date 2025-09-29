@@ -145,32 +145,55 @@ function addEventListenersToOptions(product) {
     const addToCartButton = document.querySelector('.add-to-cart-btn');
     if (addToCartButton) {
         addToCartButton.addEventListener('click', () => {
-            const sizeOptions = document.querySelectorAll('.size-option');
-            const colorOptionsEls = document.querySelectorAll('.color-option');
-            const hasSizes = sizeOptions.length > 0;
-            const hasColors = colorOptionsEls.length > 0;
             const selectedSizeEl = document.querySelector('.size-option.selected');
             const selectedColorEl = document.querySelector('.color-option.selected');
 
-            if (hasSizes && !selectedSizeEl) {
+            const selectedSize = selectedSizeEl ? selectedSizeEl.textContent : null;
+            const selectedColorName = selectedColorEl ? selectedColorEl.dataset.nombre : null;
+
+            const hasVariants = product.variantes && product.variantes.length > 0;
+            let selectedVariant = null;
+
+            // Si el producto tiene tallas o colores, la selección es obligatoria.
+            if (product.tallas.length > 0 && !selectedSize) {
                 alert('Por favor, selecciona una talla.');
                 return;
             }
-            if (hasColors && !selectedColorEl) {
+            if (product.colores.length > 0 && !selectedColorName) {
                 alert('Por favor, selecciona un color.');
                 return;
             }
 
-            const selectedSize = selectedSizeEl ? selectedSizeEl.textContent : undefined;
-            const selectedColor = selectedColorEl ? {
-                nombre: selectedColorEl.dataset.nombre,
-                codigo: selectedColorEl.dataset.codigo
-            } : undefined;
+            // Si hay variantes, encontrar la que coincide.
+            if (hasVariants) {
+                selectedVariant = product.variantes.find(v => {
+                    const sizeMatch = product.tallas.length === 0 || v.talla === selectedSize;
+                    const colorMatch = product.colores.length === 0 || v.color === selectedColorName;
+                    return sizeMatch && colorMatch;
+                });
+
+                if (!selectedVariant) {
+                    alert('Esta combinación de talla y color no está disponible.');
+                    return;
+                }
+            }
 
             if (typeof window.addToCart === 'function') {
-                window.addToCart(product, selectedSize, selectedColor);
+                // Pasamos el producto base y la variante específica encontrada.
+                // Si no hay variante, pasamos null.
+                const variantInfoForCart = selectedVariant ? {
+                    ...selectedVariant,
+                    // Añadimos el objeto de color completo para el carrito
+                    color: product.colores.find(c => c.nombre === selectedVariant.color)
+                } : {
+                    // Para productos sin variantes, creamos un objeto compatible
+                    size: selectedSize,
+                    color: product.colores.find(c => c.nombre === selectedColorName)
+                };
+
+                window.addToCart(product, variantInfoForCart);
             } else {
-                console.warn('addToCart no está disponible. Asegúrate de cargar js/cart.js antes de js/producto.js');
+                console.warn('addToCart no está disponible.');
             }
 
             showToast('Producto añadido al carrito');
