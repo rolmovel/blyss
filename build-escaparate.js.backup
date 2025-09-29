@@ -73,7 +73,6 @@ function processArticles(files) {
         tallas: data.tallas || [],
         colores: processedColors, // ← Usar colores procesados con códigos hex
         galeria_fotos: getGalleryImages(data.galeria, data.foto),
-        variantes: data.variantes || [], // ← Añadir variantes
       };
     } catch (error) {
       console.error(`Error al procesar el archivo: ${file}`, error);
@@ -114,7 +113,7 @@ function getGalleryImages(galleryData, defaultImage) {
 // Función principal para construir el escaparate
 function buildEscaparate() {
   console.log('Iniciando la construcción del escaparate...');
-  
+
 
   const articleFiles = getArticleFiles();
   if (articleFiles.length === 0) {
