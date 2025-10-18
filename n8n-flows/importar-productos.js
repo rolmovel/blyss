@@ -106,10 +106,10 @@ colores.forEach(color => {
   frontMatter += `    codigo: "${color.codigo}"\n`;
 });
 
-// 6. Lista de Variantes (con los printfulId).
+// 6. Lista de Variantes (con los external_id de Printful).
 frontMatter += 'variantes:\n';
 variants.forEach(variant => {
-  frontMatter += `  - printfulId: ${variant.id}\n`;
+  frontMatter += `  - printfulId: ${variant.external_id}\n`;
   frontMatter += `    talla: "${variant.size}"\n`;
   frontMatter += `    color: "${variant.color}"\n`;
 });
