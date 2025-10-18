@@ -66,9 +66,6 @@ export default async function handler(req, res) {
       payment_method_types: ['card'],
       line_items: line_items,
       mode: 'payment',
-      shipping_address_collection: {
-        allowed_countries: ['ES'],
-      },
       metadata: {
         transaction_id: transactionId,
         order_summary: JSON.stringify({
